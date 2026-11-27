@@ -4,7 +4,7 @@ from detector import UnderwaterDetector
 
 def main():
     # Inisialisasi detector (otomatis unduh yolo26n.pt saat pertama kali jalan)
-    detector = UnderwaterDetector(model_path="yolo26n.pt", conf_threshold=0.5)
+    detector = UnderwaterDetector(model_path="best.pt", conf_threshold=0.5)
 
     cap = cv2.VideoCapture(0)  # 0 = webcam laptop, atau ganti "video_uji.mp4"
 

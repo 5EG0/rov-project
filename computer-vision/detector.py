@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 
 class UnderwaterDetector:
-    def __init__(self, model_path="yolo26n.pt", conf_threshold=0.5):
+    def __init__(self, model_path="best.pt", conf_threshold=0.5):
         self.model = YOLO(model_path)
         self.conf_threshold = conf_threshold
 
